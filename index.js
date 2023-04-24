@@ -1,7 +1,17 @@
+const fs = require('fs')
+
+
 // TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    'What was your motivation?',
+    'Why did you build this project?',
+    'What problem does it solve?',
+    'What did you learn?'
+
+    
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
