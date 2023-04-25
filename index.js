@@ -8,23 +8,49 @@ const fs = require('fs');
 const questions = [
     {
       type: 'input',
-      name: 'motivation',
-      message: 'What was your motivation?',
+      name: 'title',
+      message: 'What is the name of your project?',
     },
     {
       type: 'input',
-      name: 'project',
-      message: 'Why did you build this project?',
+      name: 'description',
+      message: 'Please provide a description of your project:',
     },
     {
       type: 'input',
-      name: 'problem',
-      message: 'What problem does it solve?',
+      name: 'installation',
+      message: 'Please add you installation instructions:',
     },
     {
       type: 'input',
-      name: 'learned',
-      message: 'What did you learn?',
+      name: 'usage',
+      message: 'Please provide usage information:',
+    },
+    {
+      type: 'list',
+      name: 'license',
+      message: 'Please choose a license for your application:',
+      choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'BSD 3-clause', 'Unlicense'],
+    },
+    {
+      type: 'input',
+      name: 'contributing',
+      message: 'Please provide contribution guidelines:',
+    },
+    {
+      type: 'input',
+      name: 'tests',
+      message: 'Please provide test instructions:',
+    },
+    {
+      type: 'input',
+      name: 'github',
+      message: 'What is your GitHub username?',
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'What is your email address?',
     },
   ];
   
