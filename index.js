@@ -1,17 +1,33 @@
-const fs = require('fs')
+const inquirer = require('inquirer');
+const fs = require('fs');
 
 
 // TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
 const questions = [
-    'What was your motivation?',
-    'Why did you build this project?',
-    'What problem does it solve?',
-    'What did you learn?'
-
-    
-];
+    {
+      type: 'input',
+      name: 'motivation',
+      message: 'What was your motivation?',
+    },
+    {
+      type: 'input',
+      name: 'project',
+      message: 'Why did you build this project?',
+    },
+    {
+      type: 'input',
+      name: 'problem',
+      message: 'What problem does it solve?',
+    },
+    {
+      type: 'input',
+      name: 'learned',
+      message: 'What did you learn?',
+    },
+  ];
+  
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
